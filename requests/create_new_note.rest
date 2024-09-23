@@ -2,6 +2,6 @@ POST http://localhost:3001/api/notes
 Content-Type: application/json
 
 {
-  "content": "Bruno is great",
-  "important": true
+  "content": "Browser can execute only JavaScript",
+  "important": false
 }

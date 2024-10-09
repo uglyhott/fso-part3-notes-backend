@@ -30,8 +30,6 @@ beforeEach(async () => {
   await noteObject.save()
 })
 
-console.log('In note_api.test.js, NODE_ENV is set to', process.env.NODE_ENV)
-
 test('notes are returned as json', async () => {
   await api
     .get('/api/notes')

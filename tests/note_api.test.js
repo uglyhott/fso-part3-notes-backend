@@ -5,13 +5,8 @@ const supertest = require('supertest')
 const app = require('../app')
 const Note = require('../models/note')
 const helper = require('./test_helper')
-const { MONGODB_URI } = require('../utils/config')
-const { log } = require('node:console')
 
 const api = supertest(app)
-
-mongoose.set('strictQuery', false)
-mongoose.connect(MONGODB_URI)
 
 beforeEach(async () => {
   await Note.deleteMany({})

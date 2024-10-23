@@ -41,6 +41,7 @@ test('a valid note can be added ', async () => {
   const newNote = {
     content: 'async/await simplifies making async calls',
     important: true,
+    userId: '670e8476f8fb5981d044f647',
   }
 
   await api

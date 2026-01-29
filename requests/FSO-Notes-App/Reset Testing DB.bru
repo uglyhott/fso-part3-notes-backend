@@ -1,0 +1,16 @@
+meta {
+  name: Reset Testing DB
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3001/api/testing/reset
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
